@@ -66,11 +66,7 @@ const HomePage = () => {
     <div className="p-6">
       {/* Token Display */}
       <div className="bg-green-50 rounded-lg p-6 mb-6">
-      <div className="flex items-center mb-6">
-  <h1 className="text-3xl font-bold text-green-800 flex-1 text-center">EcoGuard</h1>
-  <p className="text-lg font-semibold text-gray-700">Hi, Sankalp</p>
-</div>
-
+        <h1 className="text-3xl font-bold text-green-800 mb-2">EcoGuard</h1>
         <p className="text-green-700">Join us in making our city cleaner and greener!</p>
         <div className="mt-4 bg-white rounded-lg p-4 shadow">
           <p className="text-lg font-semibold">Your Impact</p>
