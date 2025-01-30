@@ -13,25 +13,27 @@ const Layout = () => {
   ];
 
   return (
-    <div className="pb-20 min-h-screen bg-gray-50">
-      <Outlet />
-      <nav className="fixed bottom-0 w-full bg-green-600 text-white p-4">
-        <div className="flex justify-around items-center">
-          {navItems.map(({ path, icon: Icon, label }) => (
-            <Link
-              key={path}
-              to={path}
-              className={`flex flex-col items-center ${
-                location.pathname === path ? 'text-white' : 'text-green-100'
-              }`}
-            >
-              <Icon size={24} />
-              <span className="text-xs">{label}</span>
-            </Link>
-          ))}
-        </div>
-      </nav>
+    
+    <div className="pb-20 min-h-screen bg-gray-50 relative">
+  <Outlet />
+  <nav className="fixed bottom-0 left-0 w-full bg-green-600 text-white p-4">
+    <div className="flex justify-around items-center">
+      {navItems.map(({ path, icon: Icon, label }) => (
+        <Link
+          key={path}
+          to={path}
+          className={`flex flex-col items-center ${
+            location.pathname === path ? 'text-white' : 'text-green-100'
+          }`}
+        >
+          <Icon size={24} />
+          <span className="text-xs">{label}</span>
+        </Link>
+      ))}
     </div>
+  </nav>
+</div>
+
   );
 };
 

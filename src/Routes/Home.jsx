@@ -8,14 +8,14 @@ const HomePage = () => {
   const pendingReports = [
     {
       id: 1,
-      image: "/api/placeholder/80/80",
+      image: "https://www.researchgate.net/publication/320220947/figure/fig1/AS:565819516375040@1511913293208/Examples-of-problems-in-rivers-a-Industrial-waste-and-sewage-in-Mississippi-River.png",
       description: "Industrial waste near river",
       status: "pending",
       submittedAt: "1 hour ago"
     },
     {
       id: 2,
-      image: "/api/placeholder/80/80",
+      image: "https://www.sciencing.com/sciencing/factories-cause-air-pollution-5169/89169e5712ad48c18ca3e97171ee2ede.jpg",
       description: "Air pollution from factory",
       status: "reviewing",
       submittedAt: "3 hours ago"
@@ -63,7 +63,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="p-6">
+    <div >
       {/* Token Display */}
       <div className="bg-green-50 rounded-lg p-6 mb-6">
         <h1 className="text-3xl font-bold text-green-800 mb-2">EcoGuard</h1>

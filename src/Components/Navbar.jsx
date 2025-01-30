@@ -11,7 +11,7 @@ const NavigationBar = ({ currentPage, setCurrentPage }) => {
   ];
 
   return (
-    <nav className="fixed bottom-0 w-full bg-green-600 text-white p-4">
+    <nav className="fixed bottom-0 left-0 w-full max-w-full bg-green-600 text-white p-4">
       <div className="flex justify-around items-center">
         {navItems.map(({ id, icon: Icon, label }) => (
           <button
